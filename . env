@@ -1,0 +1,14 @@
+# Copy from .env.local on the Vercel dashboard
+# https://nextjs.org/learn/dashboard-app/setting-up-your-database#create-a-postgres-database
+POSTGRES_URL="postgres://default:Jv7rQfhe4Nwi@ep-snowy-queen-a4a9w8cg-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+POSTGRES_PRISMA_URL="postgres://default:Jv7rQfhe4Nwi@ep-snowy-queen-a4a9w8cg-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require&pgbouncer=true&connect_timeout=15"
+POSTGRES_URL_NO_SSL="postgres://default:Jv7rQfhe4Nwi@ep-snowy-queen-a4a9w8cg-pooler.us-east-1.aws.neon.tech:5432/verceldb"
+POSTGRES_URL_NON_POOLING="postgres://default:Jv7rQfhe4Nwi@ep-snowy-queen-a4a9w8cg.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+POSTGRES_USER="default"
+POSTGRES_HOST="ep-snowy-queen-a4a9w8cg-pooler.us-east-1.aws.neon.tech"
+POSTGRES_PASSWORD="Jv7rQfhe4Nwi"
+POSTGRES_DATABASE="verceldb"
+
+# `openssl rand -base64 32`
+AUTH_SECRET=7QMJM4t89s1i23hsCt9MMK8BKyAAkl5YatFB3jXEaQ8=
+AUTH_URL=https://nextjs-dashboard-56ri-nlhdx0t8b-zainah7s-projects.vercel.app/api/auth
